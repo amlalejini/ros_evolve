@@ -1,0 +1,3 @@
+[submodule "src/mabe_ros"]
+	path = src/mabe_ros
+	url = https://github.com/amlalejini/mabe_ros.git
