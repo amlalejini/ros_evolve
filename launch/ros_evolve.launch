@@ -1,0 +1,7 @@
+<launch>
+  <!-- Launch MABE ROS node -->
+  <node pkg="ros_evolve" type="ros_evolve_node" name="ros_evolve_node" output="screen" args="-f /home/parallels/indigo_ws/src/ros_evolve/src/mabe_ros/configs/settings.cfg /home/parallels/indigo_ws/src/ros_evolve/src/mabe_ros/configs/settings_organism.cfg /home/parallels/indigo_ws/src/ros_evolve/src/mabe_ros/configs/settings_world.cfg"/>
+
+  <!-- Launch simulator ROS node -->
+  <node pkg="stage_ros" type="stageros" name="stageros" args="$(find ros_evolve)/stage_worlds/testing.world" respawn="false" output="screen"/>
+</launch>
